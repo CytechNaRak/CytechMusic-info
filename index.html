@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cytech Music - High Quality Discord Music Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description"
+        content="Cytech Music is a feature-rich Discord music bot with high-quality audio, 24/7 mode, filters, and more.">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://images-ext-1.discordapp.net/external/E2m0k748m1r85oD18WzK_lOXv-hA8oN3a5sJ8e9rT7k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1315589139265224724/ff9d4b0f5526364d9f9578161f380720.png"
+                alt="Cytech Music Logo" class="logo-img">
+            <a href="index.html" class="logo">Cytech Music</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#features" class="lang-text" data-en="Features" data-th="ฟีเจอร์">Features</a></li>
+                <li><a href="#commands" class="lang-text" data-en="Commands" data-th="คำสั่ง">Commands</a></li>
+                <li><a href="privacy.html" class="lang-text" data-en="Privacy" data-th="ความเป็นส่วนตัว">Privacy</a>
+                </li>
+                <li><a href="terms.html" class="lang-text" data-en="Terms" data-th="ข้อตกลง">Terms</a></li>
+            </ul>
+            <div class="lang-switch">
+                <button id="lang-btn" onclick="toggleLanguage()">
+                    <span id="curr-lang">EN</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="https://images-ext-1.discordapp.net/external/E2m0k748m1r85oD18WzK_lOXv-hA8oN3a5sJ8e9rT7k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1315589139265224724/ff9d4b0f5526364d9f9578161f380720.png"
+                alt="Cytech Music" class="hero-logo">
+            <h1 class="lang-text" data-en="Music Experience<br>Reimagined" data-th="ประสบการณ์ดนตรี<br>ที่เหนือกว่า">
+                Music Experience<br>Reimagined</h1>
+            <p class="lang-text"
+                data-en="Elevate your Discord server with Cytech Music. Crystal clear audio, powerful filters, and seamless integration with your favorite music sources."
+                data-th="ยกระดับเซิร์ฟเวอร์ Discord ของคุณด้วย Cytech Music ระบบเสียงคมชัด ฟิลเตอร์จัดเต็ม และรองรับแหล่งเพลงที่คุณชื่นชอบ">
+                Elevate your Discord server with Cytech Music. Crystal clear audio, powerful filters, and seamless
+                integration with your favorite music sources.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=1315589139265224724&permissions=8&integration_type=0&scope=bot"
+                    class="cta-button lang-text" data-en="Add to Discord" data-th="เชิญบอทเข้าเซิร์ฟเวอร์">Add to
+                    Discord</a>
+                <a href="https://discord.gg/A6wMr2ZryE" class="cta-button secondary lang-text" data-en="Support Server"
+                    data-th="เข้าร่วมกลุ่มสนับสนุน">Support Server</a>
+            </div>
+        </section>
+
+        <h2 class="section-title lang-text" id="features" data-en="Why Cytech Music?" data-th="ทำไมต้อง Cytech Music?">
+            Why Cytech Music?</h2>
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎵</div>
+                <h3 class="lang-text" data-en="High Quality Audio" data-th="คุณภาพเสียงระดับสูง">High Quality Audio</h3>
+                <p class="lang-text"
+                    data-en="Experience music as it was meant to be heard with our high-bitrate audio processing engine."
+                    data-th="สัมผัสประสบการณ์ฟังเพลงที่ชัดเจนด้วยระบบประมวลผลเสียงคุณภาพสูงของเรา">Experience music as
+                    it was meant to be heard with our high-bitrate audio processing engine.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">♾️</div>
+                <h3 class="lang-text" data-en="24/7 Mode" data-th="โหมด 24/7">24/7 Mode</h3>
+                <p class="lang-text"
+                    data-en="Keep the music playing even when no one is in the voice channel. Perfect for AFK radios."
+                    data-th="เล่นเพลงต่อเนื่องแม้ไม่มีใครอยู่ในห้องเสียง เหมาะสำหรับเปิดวิทยุ AFK">Keep the music
+                    playing even when no one is in the voice channel. Perfect for AFK radios.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎛️</div>
+                <h3 class="lang-text" data-en="Audio Filters" data-th="ฟิลเตอร์เสียง">Audio Filters</h3>
+                <p class="lang-text"
+                    data-en="Customize your listening experience with Bassboost, Nightcore, Vaporwave, and more."
+                    data-th="ปรับแต่งการฟังด้วย Bassboost, Nightcore, Vaporwave และอื่นๆ อีกมากมาย">Customize your
+                    listening experience with Bassboost, Nightcore, Vaporwave, and more.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3 class="lang-text" data-en="Multi-Language" data-th="รองรับหลายภาษา">Multi-Language</h3>
+                <p class="lang-text" data-en="Fully localized interfaces in English and Thai for a native experience."
+                    data-th="รองรับทั้งภาษาอังกฤษและภาษาไทยอย่างเต็มรูปแบบ เพื่อความเข้าใจที่ง่ายขึ้น">Fully localized
+                    interfaces in English and Thai for a native experience.</p>
+            </div>
+        </section>
+
+        <h2 class="section-title lang-text" id="commands" data-en="Commands" data-th="รายการคำสั่ง">Commands</h2>
+
+        <div class="tabs-container">
+            <div class="tabs">
+                <button class="tab-btn active" onclick="openTab('music')">Music</button>
+                <button class="tab-btn" onclick="openTab('filter')">Filter</button>
+                <button class="tab-btn" onclick="openTab('info')">Info</button>
+                <button class="tab-btn" onclick="openTab('settings')">Settings</button>
+            </div>
+
+            <!-- MUSIC COMMANDS -->
+            <div id="music" class="tab-content active">
+                <div class="command-grid">
+                    <div class="command-item">
+                        <span class="command-name">/play [song]</span>
+                        <span class="lang-text" data-en="Play a song from any source"
+                            data-th="เล่นเพลงจากแหล่งต่างๆ">Play a song from any source</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/join</span>
+                        <span class="lang-text" data-en="Joins your voice channel"
+                            data-th="เข้าร่วมช่องเสียงของคุณ">Joins your voice channel</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/leave</span>
+                        <span class="lang-text" data-en="Disconnect the bot from voice channel"
+                            data-th="ตัดการเชื่อมต่อบอทจากช่องเสียง">Disconnect the bot from voice channel</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/nowplaying</span>
+                        <span class="lang-text" data-en="Show the currently playing song"
+                            data-th="แสดงเพลงที่กำลังเล่นอยู่">Show the currently playing song</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/volume [1-100]</span>
+                        <span class="lang-text" data-en="Set music volume (1-100)"
+                            data-th="ปรับระดับเสียงเพลง (1-100)">Set music volume (1-100)</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/pause</span>
+                        <span class="lang-text" data-en="Pause or Resume the music"
+                            data-th="หยุดชั่วคราว หรือ เล่นเพลงต่อ">Pause or Resume the music</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/skip</span>
+                        <span class="lang-text" data-en="Skip to next song" data-th="ข้ามไปเพลงถัดไป">Skip to next
+                            song</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/stop</span>
+                        <span class="lang-text" data-en="Stop music and disconnect"
+                            data-th="หยุดเพลงและออกจากช่องเสียง">Stop music and disconnect</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/seek [time]</span>
+                        <span class="lang-text" data-en="Seek to a specific position (e.g. 1:20)"
+                            data-th="เลื่อนไปยังช่วงเวลาที่ต้องการ (เช่น 1:20)">Seek to a specific position (e.g.
+                            1:20)</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/queue</span>
+                        <span class="lang-text" data-en="Show current music queue" data-th="แสดงคิวเพลงปัจจุบัน">Show
+                            current music queue</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILTER COMMANDS -->
+            <div id="filter" class="tab-content">
+                <div class="command-grid">
+                    <div class="command-item">
+                        <span class="command-name">/speed [value]</span>
+                        <span class="lang-text" data-en="Set playback speed (e.g. 1.25)"
+                            data-th="ปรับความเร็วเพลง (เช่น 1.25)">Set playback speed</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/karaoke</span>
+                        <span class="lang-text" data-en="Apply karaoke effect (remove vocals)"
+                            data-th="เปิดโหมดคาราโอเกะ (ตัดเสียงร้อง)">Apply karaoke effect</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/tremolo</span>
+                        <span class="lang-text" data-en="Apply tremolo effect"
+                            data-th="เปิดเอฟเฟกต์ Tremolo (สั่น)">Apply tremolo effect</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/vibrato</span>
+                        <span class="lang-text" data-en="Apply vibrato effect"
+                            data-th="เปิดเอฟเฟกต์ Vibrato (ลูกคอ)">Apply vibrato effect</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/rotation</span>
+                        <span class="lang-text" data-en="Apply rotation effect" data-th="เปิดเอฟเฟกต์หมุนเสียง">Apply
+                            rotation effect</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/distortion</span>
+                        <span class="lang-text" data-en="Apply distortion effect" data-th="เปิดเอฟเฟกต์เสียงแตก">Apply
+                            distortion effect</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/lowpass</span>
+                        <span class="lang-text" data-en="Apply lowpass filter"
+                            data-th="เปิด Lowpass Filter (ตัดเสียงแหลม)">Apply lowpass filter</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/channelmix</span>
+                        <span class="lang-text" data-en="Mix audio channels manually"
+                            data-th="ปรับแต่ง Channel เสียงเอง">Mix audio channels manually</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/nightcore</span>
+                        <span class="lang-text" data-en="Apply Nightcore effect" data-th="เปิดโหมด Nightcore">Apply
+                            Nightcore effect</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/8d</span>
+                        <span class="lang-text" data-en="Apply 8D Audio effect" data-th="เปิดโหมด 8D Audio">Apply 8D
+                            Audio effect</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/vaporwave</span>
+                        <span class="lang-text" data-en="Apply Vaporwave effect" data-th="เปิดโหมด Vaporwave">Apply
+                            Vaporwave effect</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/cleareffect</span>
+                        <span class="lang-text" data-en="Clear all sound effects"
+                            data-th="ล้างเอฟเฟกต์เสียงทั้งหมด">Clear all sound effects</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INFO COMMANDS -->
+            <div id="info" class="tab-content">
+                <div class="command-grid">
+                    <div class="command-item">
+                        <span class="command-name">/help</span>
+                        <span class="lang-text" data-en="Show help info" data-th="แสดงวิธีใช้งานและรายชื่อคำสั่ง">Show
+                            help info</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/viewsettings</span>
+                        <span class="lang-text" data-en="View current settings" data-th="ดูการตั้งค่าปัจจุบัน">View
+                            current settings</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/ping</span>
+                        <span class="lang-text" data-en="Check bot latency" data-th="เช็คค่าความหน่วง (Ping)">Check bot
+                            latency</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/uptime</span>
+                        <span class="lang-text" data-en="Check bot uptime" data-th="เช็คเวลาทำงานของบอท">Check bot
+                            uptime</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/stats</span>
+                        <span class="lang-text" data-en="Show system & node stats" data-th="แสดงสถานะระบบและ Node">Show
+                            system & node stats</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/botinfo</span>
+                        <span class="lang-text" data-en="Show bot information" data-th="แสดงข้อมูลเกี่ยวกับบอท">Show bot
+                            information</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SETTINGS COMMANDS -->
+            <div id="settings" class="tab-content">
+                <div class="command-grid">
+                    <div class="command-item">
+                        <span class="command-name">/reset</span>
+                        <span class="lang-text" data-en="Reset settings to default"
+                            data-th="รีเซ็ตการตั้งค่าเป็นค่าเริ่มต้น">Reset settings to default</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/setup</span>
+                        <span class="lang-text" data-en="Create music request channel" data-th="สร้างห้องขอเพลง">Create
+                            music request channel</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/prefix [new]</span>
+                        <span class="lang-text" data-en="Change bot prefix" data-th="เปลี่ยนคำนำหน้าบอท">Change bot
+                            prefix</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/language [lang]</span>
+                        <span class="lang-text" data-en="Change bot language (en/th)"
+                            data-th="เปลี่ยนภาษาของบอท (en/th)">Change bot language</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/247</span>
+                        <span class="lang-text" data-en="Toggle 24/7 mode" data-th="เปิด-ปิดโหมด 24/7">Toggle 24/7
+                            mode</span>
+                    </div>
+                    <div class="command-item">
+                        <span class="command-name">/autoplay</span>
+                        <span class="lang-text" data-en="Toggle Autoplay" data-th="เปิด-ปิดเล่นเพลงอัตโนมัติ">Toggle
+                            Autoplay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="https://images-ext-1.discordapp.net/external/E2m0k748m1r85oD18WzK_lOXv-hA8oN3a5sJ8e9rT7k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1315589139265224724/ff9d4b0f5526364d9f9578161f380720.png"
+                        alt="Logo" style="width: 30px; border-radius: 50%;">
+                    <span>Cytech Music</span>
+                </div>
+                <div class="copyright">&copy; 2024 Cytech Team. All rights reserved.</div>
+            </div>
+            <div class="legal-links">
+                <a href="privacy.html" class="lang-text" data-en="Privacy Policy"
+                    data-th="นโยบายความเป็นส่วนตัว">Privacy
+                    Policy</a>
+                <a href="terms.html" class="lang-text" data-en="Terms of Service" data-th="เงื่อนไขการให้บริการ">Terms
+                    of
+                    Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
