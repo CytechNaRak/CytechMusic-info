@@ -7,81 +7,161 @@
     <title>Privacy Policy - Cytech Music</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo">Cytech Music</a>
+        <div class="logo-container">
+            <img src="https://images-ext-1.discordapp.net/external/E2m0k748m1r85oD18WzK_lOXv-hA8oN3a5sJ8e9rT7k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1315589139265224724/ff9d4b0f5526364d9f9578161f380720.png"
+                alt="Cytech Music Logo" class="logo-img">
+            <a href="index.html" class="logo">Cytech Music</a>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html#features">Features</a></li>
-                <li><a href="index.html#commands">Commands</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="terms.html">Terms</a></li>
+                <li><a href="index.html#features" class="lang-text" data-en="Features" data-th="ฟีเจอร์">Features</a>
+                </li>
+                <li><a href="index.html#commands" class="lang-text" data-en="Commands" data-th="คำสั่ง">Commands</a>
+                </li>
+                <li><a href="privacy.html" class="lang-text" data-en="Privacy" data-th="ความเป็นส่วนตัว">Privacy</a>
+                </li>
+                <li><a href="terms.html" class="lang-text" data-en="Terms" data-th="ข้อตกลง">Terms</a></li>
             </ul>
+            <div class="lang-switch">
+                <button id="lang-btn" onclick="toggleLanguage()">
+                    <span id="curr-lang">EN</span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main class="content-container">
-        <h1>Privacy Policy</h1>
-        <p>Last updated: December 27, 2025</p>
+        <h1 class="lang-text" data-en="Privacy Policy" data-th="นโยบายความเป็นส่วนตัว">Privacy Policy</h1>
+        <p class="lang-text" data-en="Last updated: December 27, 2025" data-th="อัปเดตล่าสุด: 27 ธันวาคม 2025">Last
+            updated: December 27, 2025</p>
 
-        <p>Cytech Music ("we", "us", or "our") operates the Cytech Music Discord bot (the "Service"). This page informs
+        <p class="lang-text"
+            data-en="Cytech Music ('we', 'us', or 'our') operates the Cytech Music Discord bot (the 'Service'). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data."
+            data-th="Cytech Music ('เรา') ให้บริการบอทเพลง Discord ('บริการ') หน้านี้แจ้งให้คุณทราบถึงนโยบายของเราเกี่ยวกับการรวบรวม การใช้ และการเปิดเผยข้อมูลส่วนบุคคลเมื่อคุณใช้บริการของเรา และทางเลือกที่คุณมีเกี่ยวกับข้อมูลนั้น">
+            Cytech Music ("we", "us", or "our") operates the Cytech Music Discord bot (the "Service"). This page informs
             you of our policies regarding the collection, use, and disclosure of personal data when you use our Service
-            and the choices you have associated with that data.</p>
+            and the choices you have associated with that data.
+        </p>
 
-        <h2>1. Information Collection</h2>
-        <p>To provide you with the best experience, we collect and store minimal data necessary for the proper
-            functioning of the bot. This data includes:</p>
+        <h2 class="lang-text" data-en="1. Information Collection" data-th="1. การรวบรวมข้อมูล">1. Information Collection
+        </h2>
+        <p class="lang-text"
+            data-en="To provide you with the best experience, we collect and store minimal data necessary for the proper functioning of the bot. This data includes:"
+            data-th="เพื่อมอบประสบการณ์ที่ดีที่สุด เราเก็บรวบรวมและจัดเก็บข้อมูลที่จำเป็นต่อการทำงานของบอทอย่างเหมาะสม ได้แก่:">
+            To provide you with the best experience, we collect and store minimal data necessary for the proper
+            functioning of the bot. This data includes:
+        </p>
         <ul>
-            <li><strong>User IDs:</strong> To identify users for commands, permissions, and personalization.</li>
-            <li><strong>Server IDs:</strong> To manage settings and configurations specific to each Discord server.</li>
-            <li><strong>Voice Channel IDs:</strong> To connect to the correct voice channel for music playback.</li>
-            <li><strong>Usage Data:</strong> We may collect anonymous statistics on command usage to improve our
-                service.</li>
+            <li class="lang-text"
+                data-en="<strong>User IDs:</strong> To identify users for commands, permissions, and personalization."
+                data-th="<strong>User IDs:</strong> เพื่อระบุตัวตนผู้ใช้สำหรับคำสั่ง สิทธิ์ และการปรับแต่งส่วนตัว">
+                <strong>User IDs:</strong> To identify users for commands, permissions, and personalization.
+            </li>
+            <li class="lang-text"
+                data-en="<strong>Server IDs:</strong> To manage settings and configurations specific to each Discord server."
+                data-th="<strong>Server IDs:</strong> เพื่อจัดการการตั้งค่าเฉพาะสำหรับแต่ละเซิร์ฟเวอร์ Discord">
+                <strong>Server IDs:</strong> To manage settings and configurations specific to each Discord server.
+            </li>
+            <li class="lang-text"
+                data-en="<strong>Voice Channel IDs:</strong> To connect to the correct voice channel for music playback."
+                data-th="<strong>Voice Channel IDs:</strong> เพื่อเชื่อมต่อกับช่องเสียงที่ถูกต้องสำหรับเล่นเพลง">
+                <strong>Voice Channel IDs:</strong> To connect to the correct voice channel for music playback.
+            </li>
+            <li class="lang-text"
+                data-en="<strong>Usage Data:</strong> We may collect anonymous statistics on command usage to improve our service."
+                data-th="<strong>ข้อมูลการใช้งาน:</strong> เราอาจรวบรวมสถิติการใช้คำสั่งแบบไม่ระบุตัวตนเพื่อปรับปรุงบริการของเรา">
+                <strong>Usage Data:</strong> We may collect anonymous statistics on command usage to improve our
+                service.
+            </li>
         </ul>
 
-        <h2>2. Use of Data</h2>
-        <p>We use the collected data for the following purposes:</p>
+        <h2 class="lang-text" data-en="2. Use of Data" data-th="2. การใช้ข้อมูล">2. Use of Data</h2>
+        <p class="lang-text" data-en="We use the collected data for the following purposes:"
+            data-th="เราใช้ข้อมูลที่รวบรวมเพื่อวัตถุประสงค์ต่อไปนี้:">We use the collected data for the following
+            purposes:</p>
         <ul>
-            <li>To provide and maintain the Service.</li>
-            <li>To notify you about changes to our Service.</li>
-            <li>To allow you to participate in interactive features of our Service.</li>
-            <li>To provide customer support.</li>
-            <li>To detect, prevent, and address technical issues.</li>
+            <li class="lang-text" data-en="To provide and maintain the Service."
+                data-th="เพื่อให้บริการและดูแลรักษาบริการ">To provide and maintain the Service.</li>
+            <li class="lang-text" data-en="To notify you about changes to our Service."
+                data-th="เพื่อแจ้งให้คุณทราบเกี่ยวกับการเปลี่ยนแปลงบริการของเรา">To notify you about changes to our
+                Service.</li>
+            <li class="lang-text" data-en="To allow you to participate in interactive features of our Service."
+                data-th="เพื่ออนุญาตให้คุณมีส่วนร่วมในฟีเจอร์แบบโต้ตอบของบริการของเรา">To allow you to participate in
+                interactive features of our Service.</li>
+            <li class="lang-text" data-en="To provide customer support." data-th="เพื่อให้บริการสนับสนุนลูกค้า">To
+                provide customer support.</li>
+            <li class="lang-text" data-en="To detect, prevent, and address technical issues."
+                data-th="เพื่อตรวจจับ ป้องกัน และแก้ไขปัญหาทางเทคนิค">To detect, prevent, and address technical issues.
+            </li>
         </ul>
 
-        <h2>3. Data Retention</h2>
-        <p>We retain your data only for as long as is necessary for the purposes set out in this Privacy Policy. We will
-            retain and use your data to the extent necessary to comply with our legal obligations, resolve disputes, and
-            enforce our legal agreements and policies.</p>
+        <h2 class="lang-text" data-en="3. Data Retention" data-th="3. การเก็บรักษาข้อมูล">3. Data Retention</h2>
+        <p class="lang-text"
+            data-en="We retain your data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your data to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our legal agreements and policies."
+            data-th="เราเก็บรักษาข้อมูลของคุณตามระยะเวลาที่จำเป็นสำหรับวัตถุประสงค์ที่ระบุในนโยบายความเป็นส่วนตัวนี้เท่านั้น เราจะเก็บรักษาและใช้ข้อมูลของคุณเท่าที่จำเป็นเพื่อปฏิบัติตามภาระผูกพันทางกฎหมาย แก้ไขข้อพิพาท และบังคับใช้ข้อตกลงและนโยบายทางกฎหมายของเรา">
+            We retain your data only for as long as is necessary for the purposes set out in this Privacy Policy. We
+            will retain and use your data to the extent necessary to comply with our legal obligations, resolve
+            disputes, and enforce our legal agreements and policies.
+        </p>
 
-        <h2>4. Data Disclosure</h2>
-        <p>We do not sell, trade, or rent your personal identification information to others. We may share generic
+        <h2 class="lang-text" data-en="4. Data Disclosure" data-th="4. การเปิดเผยข้อมูล">4. Data Disclosure</h2>
+        <p class="lang-text"
+            data-en="We do not sell, trade, or rent your personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates, and advertisers for the purposes outlined above."
+            data-th="เราไม่ขาย แลกเปลี่ยน หรือเช่าข้อมูลระบุตัวตนส่วนบุคคลของคุณให้กับผู้อื่น เราอาจแบ่งปันข้อมูลประชากรแบบรวมทั่วไปที่ไม่ได้เชื่อมโยงกับข้อมูลระบุตัวตนส่วนบุคคลใดๆ เกี่ยวกับผู้เยี่ยมชมและผู้ใช้กับพันธมิตรทางธุรกิจ บริษัทในเครือที่เชื่อถือได้ และผู้ลงโฆษณาของเรา เพื่อวัตถุประสงค์ที่ระบุไว้ข้างต้น">
+            We do not sell, trade, or rent your personal identification information to others. We may share generic
             aggregated demographic information not linked to any personal identification information regarding visitors
             and users with our business partners, trusted affiliates, and advertisers for the purposes outlined above.
         </p>
 
-        <h2>5. Your Rights</h2>
-        <p>You have the right to request access to the data we hold about you. You may also request that we correct or
+        <h2 class="lang-text" data-en="5. Your Rights" data-th="5. สิทธิของคุณ">5. Your Rights</h2>
+        <p class="lang-text"
+            data-en="You have the right to request access to the data we hold about you. You may also request that we correct or delete your personal data. If you wish to excise these rights, please contact us via our support channels."
+            data-th="คุณมีสิทธิ์ขอเข้าถึงข้อมูลที่เราถือครองเกี่ยวกับคุณ คุณยังอาจขอให้เราแก้ไขหรือลบข้อมูลส่วนบุคคลของคุณ หากคุณต้องการใช้สิทธิ์เหล่านี้ โปรดติดต่อเราผ่านช่องทางการสนับสนุนของเรา">
+            You have the right to request access to the data we hold about you. You may also request that we correct or
             delete your personal data. If you wish to excise these rights, please contact us via our support channels.
         </p>
 
-        <h2>6. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
-            Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.</p>
+        <h2 class="lang-text" data-en="6. Changes to This Privacy Policy"
+            data-th="6. การเปลี่ยนแปลงนโยบายความเป็นส่วนตัว">6. Changes to This Privacy Policy</h2>
+        <p class="lang-text"
+            data-en="We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes."
+            data-th="เราอาจอัปเดตชี้แจงความเป็นส่วนตัวของเราเป็นครั้งคราว เราจะแจ้งให้คุณทราบถึงการเปลี่ยนแปลงใดๆ โดยการโพสต์นโยบายความเป็นส่วนตัวใหม่ในหน้านี้ คุณควรตรวจสอบนโยบายความเป็นส่วนตัวนี้เป็นระยะเพื่อดูการเปลี่ยนแปลง">
+            We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
+            Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
+        </p>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us via our Discord server.</p>
+        <h2 class="lang-text" data-en="Contact Us" data-th="ติดต่อเรา">Contact Us</h2>
+        <p class="lang-text"
+            data-en="If you have any questions about this Privacy Policy, please contact us via our Discord server."
+            data-th="หากคุณมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวนี้ โปรดติดต่อเราผ่านเซิร์ฟเวอร์ Discord ของเรา">If you
+            have any questions about this Privacy Policy, please contact us via our Discord server.</p>
     </main>
 
     <footer>
-        <div>&copy; 2024 Cytech Music. All rights reserved.</div>
-        <div class="legal-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="https://images-ext-1.discordapp.net/external/E2m0k748m1r85oD18WzK_lOXv-hA8oN3a5sJ8e9rT7k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1315589139265224724/ff9d4b0f5526364d9f9578161f380720.png"
+                        alt="Logo" style="width: 30px; border-radius: 50%;">
+                    <span>Cytech Music</span>
+                </div>
+                <div class="copyright">&copy; 2024 Cytech Team. All rights reserved.</div>
+            </div>
+            <div class="legal-links">
+                <a href="privacy.html" class="lang-text" data-en="Privacy Policy"
+                    data-th="นโยบายความเป็นส่วนตัว">Privacy Policy</a>
+                <a href="terms.html" class="lang-text" data-en="Terms of Service" data-th="เงื่อนไขการให้บริการ">Terms
+                    of Service</a>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

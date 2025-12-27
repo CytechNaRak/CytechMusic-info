@@ -7,74 +7,144 @@
     <title>Terms of Service - Cytech Music</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo">Cytech Music</a>
+        <div class="logo-container">
+            <img src="https://images-ext-1.discordapp.net/external/E2m0k748m1r85oD18WzK_lOXv-hA8oN3a5sJ8e9rT7k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1315589139265224724/ff9d4b0f5526364d9f9578161f380720.png"
+                alt="Cytech Music Logo" class="logo-img">
+            <a href="index.html" class="logo">Cytech Music</a>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html#features">Features</a></li>
-                <li><a href="index.html#commands">Commands</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="terms.html">Terms</a></li>
+                <li><a href="index.html#features" class="lang-text" data-en="Features" data-th="ฟีเจอร์">Features</a>
+                </li>
+                <li><a href="index.html#commands" class="lang-text" data-en="Commands" data-th="คำสั่ง">Commands</a>
+                </li>
+                <li><a href="privacy.html" class="lang-text" data-en="Privacy" data-th="ความเป็นส่วนตัว">Privacy</a>
+                </li>
+                <li><a href="terms.html" class="lang-text" data-en="Terms" data-th="ข้อตกลง">Terms</a></li>
             </ul>
+            <div class="lang-switch">
+                <button id="lang-btn" onclick="toggleLanguage()">
+                    <span id="curr-lang">EN</span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <main class="content-container">
-        <h1>Terms of Service</h1>
-        <p>Last updated: December 27, 2025</p>
+        <h1 class="lang-text" data-en="Terms of Service" data-th="ข้อตกลงการใช้บริการ">Terms of Service</h1>
+        <p class="lang-text" data-en="Last updated: December 27, 2025" data-th="อัปเดตล่าสุด: 27 ธันวาคม 2025">Last
+            updated: December 27, 2025</p>
 
-        <p>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the Cytech Music
-            Discord bot (the "Service") operated by Cytech Music ("us", "we", or "our").</p>
+        <p class="lang-text"
+            data-en="Please read these Terms of Service ('Terms', 'Terms of Service') carefully before using the Cytech Music Discord bot (the 'Service') operated by Cytech Music ('us', 'we', or 'our')."
+            data-th="โปรดอ่านข้อตกลงการใช้บริการเหล่านี้ ('ข้อตกลง') อย่างละเอียดก่อนใช้บอท Cytech Music Discord ('บริการ') ที่ดำเนินการโดย Cytech Music ('เรา')">
+            Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the Cytech Music
+            Discord bot (the "Service") operated by Cytech Music ("us", "we", or "our").
+        </p>
 
-        <h2>1. Acceptance of Terms</h2>
-        <p>By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the
-            terms, then you may not access the Service.</p>
+        <h2 class="lang-text" data-en="1. Acceptance of Terms" data-th="1. การยอมรับข้อตกลง">1. Acceptance of Terms</h2>
+        <p class="lang-text"
+            data-en="By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service."
+            data-th="เมื่อเข้าถึงหรือใช้บริการ คุณตกลงที่จะผูกพันตามข้อตกลงเหล่านี้ หากคุณไม่เห็นด้วยกับส่วนใดส่วนหนึ่งของข้อตกลง คุณอาจไม่สามารถเข้าถึงบริการได้">
+            By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of
+            the terms, then you may not access the Service.
+        </p>
 
-        <h2>2. Usage License</h2>
-        <p>Permission is granted to add and use the Cytech Music bot in your Discord servers, subject to the following
-            restrictions:</p>
+        <h2 class="lang-text" data-en="2. Usage License" data-th="2. ใบอนุญาตการใช้งาน">2. Usage License</h2>
+        <p class="lang-text"
+            data-en="Permission is granted to add and use the Cytech Music bot in your Discord servers, subject to the following restrictions:"
+            data-th="อนุญาตให้เพิ่มและใช้บอท Cytech Music ในเซิร์ฟเวอร์ Discord ของคุณ ภายใต้ข้อจำกัดต่อไปนี้:">
+            Permission is granted to add and use the Cytech Music bot in your Discord servers, subject to the following
+            restrictions:
+        </p>
         <ul>
-            <li>You may not use the bot for any illegal or unauthorized purpose.</li>
-            <li>You may not attempt to exploit, reverse engineer, or compromise the integrity of the bot's code or
-                infrastructure.</li>
-            <li>You agree not to spam or abuse the bot's commands.</li>
+            <li class="lang-text" data-en="You may not use the bot for any illegal or unauthorized purpose."
+                data-th="คุณต้องไม่ใช้บอทเพื่อวัตถุประสงค์ที่ผิดกฎหมายหรือได้รับอนุญาต">
+                You may not use the bot for any illegal or unauthorized purpose.
+            </li>
+            <li class="lang-text"
+                data-en="You may not attempt to exploit, reverse engineer, or compromise the integrity of the bot's code or infrastructure."
+                data-th="คุณต้องไม่พยายามใช้ประโยชน์ วิศวกรรมย้อนกลับ หรือทำลายความสมบูรณ์ของโค้ดหรือโครงสร้างพื้นฐานของบอท">
+                You may not attempt to exploit, reverse engineer, or compromise the integrity of the bot's code or
+                infrastructure.
+            </li>
+            <li class="lang-text" data-en="You agree not to spam or abuse the bot's commands."
+                data-th="คุณตกลงที่จะไม่สแปมหรือใช้คำสั่งของบอทในทางที่ผิด">
+                You agree not to spam or abuse the bot's commands.
+            </li>
         </ul>
 
-        <h2>3. Availability and Termination</h2>
-        <p>We reserve the right to modify, suspend, or discontinue the Service at any time, with or without notice. We
+        <h2 class="lang-text" data-en="3. Availability and Termination" data-th="3. ความพร้อมใช้งานและการยุติบริการ">3.
+            Availability and Termination</h2>
+        <p class="lang-text"
+            data-en="We reserve the right to modify, suspend, or discontinue the Service at any time, with or without notice. We may also terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms."
+            data-th="เราขอสงวนสิทธิ์ในการแก้ไข ระงับ หรือยุติบริการได้ทุกเมื่อ โดยมีหรือไม่มีการแจ้งล่วงหน้า นอกจากนี้ เรายังอาจยุติหรือระงับการเข้าถึงบริการของเราทันทีโดยไม่ต้องแจ้งล่วงหน้าหรือรับผิดชอบใดๆ ด้วยเหตุผลใดก็ตาม รวมถึงหากคุณละเมิดข้อตกลง">
+            We reserve the right to modify, suspend, or discontinue the Service at any time, with or without notice. We
             may also terminate or suspend access to our Service immediately, without prior notice or liability, for any
-            reason whatsoever, including without limitation if you breach the Terms.</p>
+            reason whatsoever, including without limitation if you breach the Terms.
+        </p>
 
-        <h2>4. Content Liability</h2>
-        <p>The Service plays content from third-party sources (e.g., YouTube, SoundCloud). We do not host, upload, or
+        <h2 class="lang-text" data-en="4. Content Liability" data-th="4. ความรับผิดชอบต่อเนื้อหา">4. Content Liability
+        </h2>
+        <p class="lang-text"
+            data-en="The Service plays content from third-party sources (e.g., YouTube, SoundCloud). We do not host, upload, or control this content. We are not responsible for the availability, accuracy, or legality of such content. Responsibility for content consumption lies with the user."
+            data-th="บริการนี้เล่นเนื้อหาจากแหล่งบุคคลที่สาม (เช่น YouTube, SoundCloud) เราไม่ได้โฮสต์ อัปโหลด หรือควบคุมเนื้อหานี้ เราไม่รับผิดชอบต่อความพร้อมใช้งาน ความถูกต้อง หรือความถูกต้องตามกฎหมายของเนื้อหาดังกล่าว ความรับผิดชอบในการเสพเนื้อหาเป็นของผู้ใช้">
+            The Service plays content from third-party sources (e.g., YouTube, SoundCloud). We do not host, upload, or
             control this content. We are not responsible for the availability, accuracy, or legality of such content.
-            Responsibility for content consumption lies with the user.</p>
+            Responsibility for content consumption lies with the user.
+        </p>
 
-        <h2>5. Limitation of Liability</h2>
-        <p>In no event shall Cytech Music, nor its developers, be liable for any indirect, incidental, special,
+        <h2 class="lang-text" data-en="5. Limitation of Liability" data-th="5. ข้อจำกัดความรับผิด">5. Limitation of
+            Liability</h2>
+        <p class="lang-text"
+            data-en="In no event shall Cytech Music, nor its developers, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from yours access to or use of or inability to access or use the Service."
+            data-th="ไม่ว่าในกรณีใด Cytech Music หรือนักพัฒนาจะไม่รับผิดชอบต่อความเสียหายทางอ้อม ความเสียหายที่เกิดขึ้นโดยบังเอิญ ความเสียหายพิเศษ ความเสียหายที่เป็นผลสืบเนื่อง หรือความเสียหายเชิงลงโทษ ซึ่งรวมถึงแต่ไม่จำกัดเพียง การสูญเสียผลกำไร ข้อมูล การใช้งาน ค่าความนิยม หรือความสูญเสียที่จับต้องไม่ได้อื่นๆ ที่เป็นผลมาจากการเข้าถึงหรือการใช้ หรือความไม่สามารถเข้าถึงหรือใช้บริการของคุณ">
+            In no event shall Cytech Music, nor its developers, be liable for any indirect, incidental, special,
             consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or
             other intangible losses, resulting from yours access to or use of or inability to access or use the Service.
         </p>
 
-        <h2>6. Changes</h2>
-        <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. What constitutes
+        <h2 class="lang-text" data-en="6. Changes" data-th="6. การเปลี่ยนแปลง">6. Changes</h2>
+        <p class="lang-text"
+            data-en="We reserve the right, at our sole discretion, to modify or replace these Terms at any time. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms."
+            data-th="เราขอสงวนสิทธิ์ตามดุลยพินิจของตนแต่เพียงผู้เดียวในการแก้ไขหรือเปลี่ยนข้อตกลงเหล่านี้ได้ทุกเมื่อ การเปลี่ยนแปลงที่มีสาระสำคัญจะถูกกำหนดตามดุลยพินิจของเราแต่เพียงผู้เดียว หากคุณยังคงเข้าถึงหรือใช้บริการของเราต่อไปหลังจากที่การแก้ไขเหล่านั้นมีผลบังคับใช้ ถือว่าคุณตกลงที่จะผูกพันตามข้อตกลงที่แก้ไข">
+            We reserve the right, at our sole discretion, to modify or replace these Terms at any time. What constitutes
             a material change will be determined at our sole discretion. By continuing to access or use our Service
-            after those revisions become effective, you agree to be bound by the revised terms.</p>
+            after those revisions become effective, you agree to be bound by the revised terms.
+        </p>
 
-        <h2>Contact Us</h2>
-        <p>If you have any questions about these Terms, please contact us via our Discord server.</p>
+        <h2 class="lang-text" data-en="Contact Us" data-th="ติดต่อเรา">Contact Us</h2>
+        <p class="lang-text"
+            data-en="If you have any questions about these Terms, please contact us via our Discord server."
+            data-th="หากคุณมีคำถามเกี่ยวกับข้อตกลงเหล่านี้ โปรดติดต่อเราผ่านเซิร์ฟเวอร์ Discord ของเรา">If you have any
+            questions about these Terms, please contact us via our Discord server.</p>
     </main>
 
     <footer>
-        <div>&copy; 2024 Cytech Music. All rights reserved.</div>
-        <div class="legal-links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Service</a>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="https://images-ext-1.discordapp.net/external/E2m0k748m1r85oD18WzK_lOXv-hA8oN3a5sJ8e9rT7k/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1315589139265224724/ff9d4b0f5526364d9f9578161f380720.png"
+                        alt="Logo" style="width: 30px; border-radius: 50%;">
+                    <span>Cytech Music</span>
+                </div>
+                <div class="copyright">&copy; 2024 Cytech Team. All rights reserved.</div>
+            </div>
+            <div class="legal-links">
+                <a href="privacy.html" class="lang-text" data-en="Privacy Policy"
+                    data-th="นโยบายความเป็นส่วนตัว">Privacy Policy</a>
+                <a href="terms.html" class="lang-text" data-en="Terms of Service" data-th="เงื่อนไขการให้บริการ">Terms
+                    of Service</a>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
