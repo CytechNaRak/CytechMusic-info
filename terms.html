@@ -18,14 +18,21 @@
             <a href="index.html" class="logo">Cytech Music</a>
         </div>
         <nav>
-            <ul>
-                <li><a href="index.html#features" class="lang-text" data-en="Features" data-th="ฟีเจอร์">Features</a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html#features" class="lang-text" data-en="Features" data-th="ฟีเจอร์"
+                        onclick="closeMenu()">Features</a>
                 </li>
-                <li><a href="index.html#commands" class="lang-text" data-en="Commands" data-th="คำสั่ง">Commands</a>
+                <li><a href="index.html#commands" class="lang-text" data-en="Commands" data-th="คำสั่ง"
+                        onclick="closeMenu()">Commands</a>
                 </li>
-                <li><a href="privacy.html" class="lang-text" data-en="Privacy" data-th="ความเป็นส่วนตัว">Privacy</a>
+                <li><a href="privacy.html" class="lang-text" data-en="Privacy" data-th="ความเป็นส่วนตัว"
+                        onclick="closeMenu()">Privacy</a>
                 </li>
-                <li><a href="terms.html" class="lang-text" data-en="Terms" data-th="ข้อตกลง">Terms</a></li>
+                <li><a href="terms.html" class="lang-text" data-en="Terms" data-th="ข้อตกลง"
+                        onclick="closeMenu()">Terms</a></li>
             </ul>
             <div class="lang-switch">
                 <button id="lang-btn" onclick="toggleLanguage()">
