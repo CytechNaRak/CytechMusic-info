@@ -409,6 +409,7 @@ footer {
     }
 
     header {
+        position: relative;
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
@@ -442,4 +443,8 @@ footer {
     .footer-left {
         align-items: center;
     }
+}
+
+html {
+    scroll-padding-top: 120px;
 }
